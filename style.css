@@ -1,7 +1,8 @@
 :root {
   --latest-card-width: 65%;
   --featured-card-width: 70%;
-  --nav-height: 90px;
+  --nav-height: auto;
+  --computed: calc((var(--vh, 1vh) * 100) - var(--nav-height));
 }
 
 *,
@@ -168,7 +169,7 @@ ul.nav__list li {
   background-position-y: center;
   background-size: cover;
   filter: grayscale(100%);
-  height: calc((var(--vh, 1vh) * 100) - var(--nav-height));
+  height: var(--computed);
 }
 
 .offer-news {
