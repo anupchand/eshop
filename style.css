@@ -58,7 +58,7 @@ li {
 }
 
 #main-header .container.flex {
-  padding-block: 0.5em;
+  padding-block: 0.2em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -144,6 +144,7 @@ ul.nav__list {
 
 ul.nav__list li {
   height: 100%;
+  align-self: center;
 }
 
 .nav__list li:not(:last-child) {
@@ -152,7 +153,7 @@ ul.nav__list li {
 
 .nav__list li a {
   text-transform: uppercase;
-  line-height: 70px;
+  line-height: 52px;
   display: inline-block;
   color: #fff;
 }
@@ -162,8 +163,9 @@ ul.nav__list li {
   color: black;
 }
 
+/* Hero section ------------*/
 .hero {
-  background: url("./images/hero.jpg");
+  background: url("./images/hero1.png");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
@@ -522,6 +524,13 @@ footer {
   }
 }
 @media (min-width: 801px) {
+  .top-bar {
+    height: auto;
+  }
+
+  #main-header .container.flex {
+    padding: 0.3em;
+  }
   .nav-toggle-btn {
     display: none;
   }
@@ -534,15 +543,11 @@ footer {
     position: relative;
     justify-content: flex-end;
   }
-  /* .notice p.top {
-    font-size: 2rem;
+  .hero {
+    /* height: 100vh - 200px; */
+    height: var(--computed);
   }
-  .notice p.bottom {
-    font-size: 2.5rem;
-  }
-  .news-button {
-    font-size: 2.3rem;
-  } */
+
   .latest .container {
     text-align: center;
     display: grid;
