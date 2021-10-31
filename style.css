@@ -594,7 +594,7 @@ footer {
 @media (max-width: 420px) {
   .notice {
     padding-right: 0;
-    padding-left: 2em;
+    padding-left: 0.5em;
     font-size: 10px;
   }
   .notice p.top {
