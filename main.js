@@ -18,7 +18,7 @@ document.documentElement.style.setProperty("--vh", `${vh}px`);
 
 // We listen to the resize event
 
-window.addEventListener("load", () => {
+window.addEventListener("resize", () => {
   // We execute the same script as before
 
   if (scrH >= 400) {

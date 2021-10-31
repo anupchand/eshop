@@ -1,7 +1,7 @@
 :root {
   --latest-card-width: 65%;
   --featured-card-width: 70%;
-  --nav-height: auto;
+  --nav-height: 70px;
   --computed: calc((var(--vh, 1vh) * 100) - var(--nav-height));
 }
 
@@ -54,7 +54,7 @@ li {
 
 .top-bar {
   background-color: black;
-  height: var(--nav-height);
+  min-height: var(--nav-height);
 }
 
 #main-header .container.flex {
