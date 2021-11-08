@@ -31,8 +31,6 @@ window.addEventListener("load", () => {
     console.log(`Height <= 500`);
   }
 
-  console.log("123");
-
   if (scrWidth <= 500) {
     document.documentElement.style.setProperty("--vh", `${vh}px`);
     document.documentElement.style.setProperty(
