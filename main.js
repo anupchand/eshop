@@ -61,4 +61,5 @@ window.addEventListener("load", () => {
 // });
 
 // console.log(topBarHeight);
-console.log(scrWidth);
+
+document.getElementById("thisYear").innerHTML = new Date().getFullYear();
