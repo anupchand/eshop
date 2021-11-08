@@ -17,12 +17,13 @@ let scrWidth = screen.width;
 // Then we set the value in the --vh custom property to the root of the document
 document.documentElement.style.setProperty("--vh", `${vh}px`);
 
-// We listen to the resize event
+// We listen to the load event
 
 window.addEventListener("load", () => {
   // We execute the same script as before
 
   if (scrH <= 500) {
+    // if mobile is in landscape mode
     document.documentElement.style.setProperty("--computed", `120vh`);
     document.documentElement.style.setProperty(
       "--nav-height",
@@ -32,6 +33,7 @@ window.addEventListener("load", () => {
   }
 
   if (scrWidth <= 500) {
+    // if mobile is in potrait mode
     document.documentElement.style.setProperty("--vh", `${vh}px`);
     document.documentElement.style.setProperty(
       "--nav-height",
@@ -41,23 +43,5 @@ window.addEventListener("load", () => {
   }
 });
 
-//   if (scrH >= 400) {
-//     document.documentElement.style.setProperty("--vh", `${vh}px`);
-//     document.documentElement.style.setProperty(
-//       "--nav-height",
-//       `${topBarHeight}px`
-//     );
-//     console.log(`EVENT: screen height is >= 400 ${scrH}`);
-//   } else if (scrH <= 400) {
-//     document.documentElement.style.setProperty("--computed", `120vh`);
-//     document.documentElement.style.setProperty(
-//       "--nav-height",
-//       `${topBarHeight}px`
-//     );
-//     console.log(`EVENT: 120vh implemented`);
-//   }
-// });
-
-// console.log(topBarHeight);
-
+/*Update copyright year automatically as per the current Year*/
 document.getElementById("thisYear").innerHTML = new Date().getFullYear();
