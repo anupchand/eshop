@@ -44,4 +44,4 @@ window.addEventListener("load", () => {
 });
 
 /*Update copyright year automatically as per the current Year*/
-document.getElementById("thisYear").innerHTML = new Date().getFullYear();
+document.getElementById("thisYear").innerText = new Date().getFullYear();
