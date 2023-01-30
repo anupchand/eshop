@@ -161,6 +161,7 @@ ul.nav__list li {
 .nav__list li a:hover {
   background-color: white;
   color: black;
+  transition: 0.2s ease-in-out;
 }
 
 /* Hero section ------------*/
