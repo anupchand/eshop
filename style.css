@@ -241,6 +241,7 @@ ul.nav__list li {
 
 .news-button:hover {
   color: black;
+  border: 2px solid black;
 }
 .news-button:hover::after {
   transform: scaleX(1);
